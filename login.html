@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login and registration form dsign</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+  <div class="login-page">
+  
+  <br><br><br><br><br><br>
+  <div class="row d-flex justify-content-center">
+  <div class="container col-md-6">
+  
+  <div class="card">
+	<div class="card-body">
+     <div class="form">
+         <form class="register-form">
+		 <fieldset class="form-group">
+		 <input type="text" placeholder="user name" class="form-control" required />
+		 </fieldset>
+		 
+		 <fieldset class="form-group">
+		 <input type="text" placeholder="Password" class="form-control" required />
+		 </fieldset>
+		 
+		 <fieldset class="form-group">
+         <input type="text" placeholder="email id" class="form-control" required />
+		 </fieldset>
+		 
+		 <button type="submit" class="btn btn-outline-info">Create</button>
+		 <br><br>
+		 <p class="message">Already Registerd? <a href="#">Login</a></p>
+		 </form>
+		 
+		 <form class="login-form">
+		 
+		 <fieldset class="form-group">
+		 <input type="text" placeholder="user name" class="form-control" required />
+		 </fieldset>
+		 
+		 <fieldset class="form-group">
+		 <input type="password" placeholder="password" class="form-control" required />
+		 </fieldset>
+		 
+		 <button type="submit" class="btn btn-outline-info">Login</button>
+		 <br><br>
+		 <p class="message">Not Registerd? <a href="#">Register</a></p>
+		 </form>
+		 
+		      
+		  </div>
+		 </div>
+		</div> 
+	 </div>
+   </div>
+			
+ 
+		 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+		 
+		 <script>
+		 $('.message a').click(function(){
+		 $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+		 
+		 });
+		 </script>
+		 
+		 	 
+</body>		 
+</html>
